@@ -18,19 +18,19 @@ This script comes with some features:
 * -n                 To enable numbers
 
 ## Exemples
-* ~$ python main.py 
+* ~$ python main.py  ==>  
  ygomxitobkuyekhn
 
-* ~$ python main.py -l 32
+* ~$ python main.py -l 32  ==>  
  asibigklmqpibptblmhrbogsahqivxpt
 
-* ~$ python main.py -c
+* ~$ python main.py -c  ==>  
  i>_?euhv=[$n#;r=
 
-* ~$ python main.py -m
+* ~$ python main.py -m  ==>  
  QGAyhLtIksUErVvQ
 
-* ~$ python main.py -n
+* ~$ python main.py -n  ==>  
  sktc4mwk1wlu1tf0
 
 ## Planned features
