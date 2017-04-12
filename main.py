@@ -42,6 +42,5 @@ if __name__ == '__main__':
         if o == "-n":
             num = True
 
-    for i in range(25):
-        g = Generator(length,maj,num,char)
-        print(g.getPsswd()+"\n")
+    g = Generator(length,maj,num,char)
+    print(g.getPsswd())
