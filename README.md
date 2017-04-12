@@ -4,6 +4,7 @@
 ## Usage
 ### Basic usage
 python main.py or ./main.py -- depending of how you named the script
+
 This will run the script with the basic options: 
   * 16 chars
   * Without numbers
