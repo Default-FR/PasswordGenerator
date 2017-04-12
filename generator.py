@@ -1,8 +1,12 @@
-from generationException import LengthException
 from random              import choice
 from random              import shuffle
 from random              import sample
 
+from generationException import LengthException
+
+'''
+    Generator object 
+'''
 class Generator():
     def __init__(self,length,maj,num,char):
         self.__length  = length
@@ -21,6 +25,16 @@ class Generator():
         "self.__char    =   "+ str(self.__char)+"\r\n"
         return objstr
 
+    '''
+        TL;DR   return a list for the password generation
+
+        init a list containing [a-z]
+        if self.__maj  -> add [A-Z]
+        if self.__num  -> add [0-9]
+        if self.__char -> add special chars
+
+        then shuffle the list
+    '''
     def __charList(self):
         lGen = [chr(97+x) for x in range(25)]
        
@@ -41,6 +55,15 @@ class Generator():
         return lGen
         
 
+    '''
+        TL;DR   generate the password using self.__genList
+                raise LengthException
+
+        use the self.__genList to create the password
+
+        raise a LengthException if the password isn't in the
+        defined bounds (5<length<64)
+    '''
     def __genPsswd(self):
         if int(self.__length)<5 or int(self.__length)>64:
             raise LengthException
@@ -49,5 +72,8 @@ class Generator():
         for i in xrange(int(self.__length)):
             self.__psswd += choice(self.__genList)
 
+    '''
+        return string -> the password generated
+    '''
     def getPsswd(self):
         return self.__psswd
