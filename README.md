@@ -3,7 +3,7 @@
 
 ## Usage
 ### Basic usage
-python main.py
+python main.py or ./main.py -- depending of how you named the script
 This will run the script with the basic options: 
   * 16 chars
   * Without numbers
@@ -18,7 +18,6 @@ This script comes with some features:
 * -n                 To enable numbers
 
 ## Exemples 
-**I'm using python main.py here but you can also do ./main.py or whatever you named the script**
 * ~$ python main.py  
  ygomxitobkuyekhn
 
