@@ -10,7 +10,7 @@ This will run the script with the basic options:
   * Without upper case
   * Without symbols/special chars
  
-## Available options
+### Available options
 This script comes with some features:
 * -l [length]        Enter the password length (must be more than 4 and less than 64
 * -c                 To enable special chars
