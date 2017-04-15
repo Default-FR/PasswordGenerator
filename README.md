@@ -18,7 +18,7 @@ This script comes with some features:
 * -m                 To enable upper case
 * -n                 To enable numbers
 
-## Exemples 
+## Examples 
 * ~$ python main.py  
  ygomxitobkuyekhn
 
