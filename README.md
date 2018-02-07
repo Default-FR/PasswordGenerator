@@ -6,7 +6,7 @@
 python main.py or ./main.py -- depending of how you named the script
 
 This will run the script with the basic options: 
-  * 16 chars
+  * 32 chars
   * Without numbers
   * Without upper case
   * Without symbols/special chars
@@ -19,21 +19,62 @@ This script comes with some features:
 * -n                 To enable numbers
 
 ## Examples 
-* ~$ python main.py  
- ygomxitobkuyekhn
+Basic feature
+```shell
+~$ python3 main.py  
+size  : 32
+maj   : False
+num   : False
+char  : False
 
-* ~$ python main.py -l 32  
- asibigklmqpibptblmhrbogsahqivxpt
+final : oeoqbbbruawtuoqgpxqkweiefrwwbmuc
+```
 
-* ~$ python main.py -c  
- i>_?euhv=[$n#;r=
+Custom length
+```shell
+~$ python3 main.py -l 16
+size  : 16
+maj   : False
+num   : False
+char  : False
 
-* ~$ python main.py -m   
- QGAyhLtIksUErVvQ
+final : yaqvwkcmdrcomcii
+```
 
-* ~$ python main.py -n  
- sktc4mwk1wlu1tf0
+Add chars
+```shell
+~$ python3 main.py -c
+size  : 32
+maj   : False
+num   : False
+char  : True
+
+final : ;!h>_&qi<,&b&d:x=kbb(u<|^,-deh()
+```
+
+Add majs
+```shell
+~$ python3 main.py -m
+size  : 32
+maj   : True
+num   : False
+char  : False
+
+final : NqaxXgmTrEYQXoTporeUsdnHJYGgMvMP
+```
+
+Add numbers
+```shell
+~$ python3 main.py -n
+size  : 32
+maj   : False
+num   : True
+char  : False
+
+final : pc0ehify4ok2k27i1dfec2q7gkwnglsv
+```
 
 ## Planned features
-* Add a non-repeat option for password
-* Add an option to store the generated password inside a file
+- [x] make documentation
+- [x] switched to python3
+- [ ] copy to clipboard
