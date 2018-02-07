@@ -10,9 +10,15 @@ import getopt
 from getopt    import getopt
 from getopt    import GetoptError
 
+import tkinter
+from tkinter import Tk
+
 import sys
 from sys       import argv
 from sys       import exit
+
+import os
+from os import system
 
 DEFAULT_SIZE = 32
 EXIT_FAILURE = 1
@@ -27,9 +33,12 @@ def print_usage(err_ret):
     print (msg.format(MIN_SIZE, MAX_SIZE))
     exit (err_ret)
 
+def save_to_clipboard (psswd) :
+    system('echo ' + psswd + '| clip')
+
 if __name__ == '__main__':
-    char   = True
-    maj    = True
+    char   = False
+    maj    = False
     num    = True
     length = DEFAULT_SIZE
 
@@ -57,6 +66,6 @@ if __name__ == '__main__':
 
     g = Generator (length, maj, num, char)
     password = g.get_password()
-    # print(password)
-    # print('-----')
     print(g)
+
+    save_to_clipboard(g.get_password())

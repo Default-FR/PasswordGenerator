@@ -77,4 +77,4 @@ final : pc0ehify4ok2k27i1dfec2q7gkwnglsv
 ## Planned features
 - [x] make documentation
 - [x] switched to python3
-- [ ] copy to clipboard
+- [x] copy to clipboard
