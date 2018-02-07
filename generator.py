@@ -22,7 +22,7 @@ class Generator():
         __genList : char list for the generation
         __psswd   : generated password
     """
-    def __init__(self,length,maj,num,char):
+    def __init__(self, length, maj, num, char):
         self.__length  = int(length)
         self.__maj     = maj
         self.__num     = num
@@ -57,7 +57,6 @@ class Generator():
         Returns:
             lGen : list containing the alphabet
         """
-
         lGen = [chr(97+x) for x in range(25)]
        
         if self.__char :
@@ -72,7 +71,7 @@ class Generator():
         if self.__num :
             lGen += [chr(48+x) for x in range(9)]
 
-        for x in range(SHUFFLE_LIM):
+        for _ in range(SHUFFLE_LIM):
             shuffle(lGen)
 
         return lGen

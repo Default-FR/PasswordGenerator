@@ -20,7 +20,7 @@ from sys       import exit
 import os
 from os import system
 
-DEFAULT_SIZE = 32
+DEFAULT_SIZE = 18
 EXIT_FAILURE = 1
 EXIT_SUCCESS = 0
 
@@ -39,7 +39,7 @@ def save_to_clipboard (psswd) :
 if __name__ == '__main__':
     char   = False
     maj    = False
-    num    = True
+    num    = False
     length = DEFAULT_SIZE
 
     try:
